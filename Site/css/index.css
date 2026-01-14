@@ -1,0 +1,191 @@
+@font-face {
+  src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+    format("woff2");
+  font-family: "Meta";
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #101010;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.wave-text span {
+    display: inline-block;
+    font-size: 4rem;
+    animation: wave 1s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(5) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(6) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(7) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(8) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(9) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(10) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(11) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(12) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(13) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(14) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(15) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(16) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(17) {
+    animation-delay: 0s;
+}
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.wave-text {
+    display: flex;
+    margin-left: 30%;
+    margin-top: 3%;
+}
+
+main {
+  display: flex;
+  margin-left: 12%;
+  transition: all 0.5s;
+  -webkit-text-stroke: 4px #d6f4f4;
+  font-variation-settings: "wght" 900, "ital" 1;
+  font-size: 15rem;
+  text-align: center;
+  color: transparent;
+  font-family: "Meta", sans-serif;
+  text-shadow: 10px 10px 0px #07bccc,
+    15px 15px 0px #e601c0,
+    20px 20px 0px #e9019a,
+    25px 25px 0px #f40468,
+    45px 45px 10px #482896;
+  cursor: pointer;
+}
+
+main:hover {
+  margin-left: 20%;
+  font-variation-settings: "wght" 100, "ital" 0;
+  text-shadow: none;
+}
+
+
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  animation: lights 5s 750ms linear infinite;
+}
+
+h2 {
+    margin-left: 20%;
+}
+
+.FlappyBird {
+    position:absolute;
+    margin-left: 32%;
+}
+
+.Tetris {
+    position:absolute;
+    margin-left: 46%;
+}
+
+.Snake {
+    position:absolute;
+    margin-left: 56%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
